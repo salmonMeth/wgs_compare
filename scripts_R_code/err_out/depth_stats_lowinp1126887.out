@@ -1,0 +1,45 @@
+============================================
+Processing 8034
+Input: /scratch/project_2019524/pinksalmon_alignments/lowinput/coverage_depth/8034.depth.txt
+============================================
+Genome-wide output:
+/scratch/project_2019524/pinksalmon_alignments/lowinput/coverage_depth/depth_stats/8034.depth_stats.txt
+Chromosome-level output:
+/scratch/project_2019524/pinksalmon_alignments/lowinput/coverage_depth/depth_stats/8034.chromosome_depth_stats.txt
+
+============================================
+Processing 8035
+Input: /scratch/project_2019524/pinksalmon_alignments/lowinput/coverage_depth/8035.depth.txt
+============================================
+Genome-wide output:
+/scratch/project_2019524/pinksalmon_alignments/lowinput/coverage_depth/depth_stats/8035.depth_stats.txt
+Chromosome-level output:
+/scratch/project_2019524/pinksalmon_alignments/lowinput/coverage_depth/depth_stats/8035.chromosome_depth_stats.txt
+
+============================================
+Processing 8036
+Input: /scratch/project_2019524/pinksalmon_alignments/lowinput/coverage_depth/8036.depth.txt
+============================================
+Genome-wide output:
+/scratch/project_2019524/pinksalmon_alignments/lowinput/coverage_depth/depth_stats/8036.depth_stats.txt
+Chromosome-level output:
+/scratch/project_2019524/pinksalmon_alignments/lowinput/coverage_depth/depth_stats/8036.chromosome_depth_stats.txt
+
+============================================
+Processing 8038
+Input: /scratch/project_2019524/pinksalmon_alignments/lowinput/coverage_depth/8038.depth.txt
+============================================
+Genome-wide output:
+/scratch/project_2019524/pinksalmon_alignments/lowinput/coverage_depth/depth_stats/8038.depth_stats.txt
+Chromosome-level output:
+/scratch/project_2019524/pinksalmon_alignments/lowinput/coverage_depth/depth_stats/8038.chromosome_depth_stats.txt
+
+============================================
+All samples finished
+
+Genome-wide statistics:
+/scratch/project_2019524/pinksalmon_alignments/lowinput/coverage_depth/depth_stats/all_samples_depth_stats.txt
+
+Per-chromosome statistics:
+/scratch/project_2019524/pinksalmon_alignments/lowinput/coverage_depth/depth_stats/all_samples_chromosome_depth_stats.txt
+============================================

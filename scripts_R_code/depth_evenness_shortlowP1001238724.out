@@ -1,0 +1,21 @@
+Processing 8034 lowinput_P100
+Input:  /scratch/project_2019524/pinksalmon_alignments/lowinput_P100/coverage_depth/8034.depth.txt
+Output: /scratch/project_2019524/pinksalmon_depth_evenness_short/8034_lowinput_P100_depth_evenness.txt
+Finished 8034
+
+Processing 8035 lowinput_P100
+Input:  /scratch/project_2019524/pinksalmon_alignments/lowinput_P100/coverage_depth/8035.depth.txt
+Output: /scratch/project_2019524/pinksalmon_depth_evenness_short/8035_lowinput_P100_depth_evenness.txt
+Finished 8035
+
+Processing 8036 lowinput_P100
+Input:  /scratch/project_2019524/pinksalmon_alignments/lowinput_P100/coverage_depth/8036.depth.txt
+Output: /scratch/project_2019524/pinksalmon_depth_evenness_short/8036_lowinput_P100_depth_evenness.txt
+Finished 8036
+
+Processing 8038 lowinput_P100
+Input:  /scratch/project_2019524/pinksalmon_alignments/lowinput_P100/coverage_depth/8038.depth.txt
+Output: /scratch/project_2019524/pinksalmon_depth_evenness_short/8038_lowinput_P100_depth_evenness.txt
+Finished 8038
+
+All samples completed.

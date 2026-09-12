@@ -1,0 +1,9 @@
+.	Basic Statistics	Per Base Sequence Quality	Per Sequence Quality Scores	Per Base Sequence Content	Per Sequence GC Content	Per Base N Content	Sequence Length Distribution	Sequence Duplication Levels	Overrepresented Sequences	Adapter Content
+E150031652_L01_B5GANIdazlRAAAA-8034_1	1	1	1	0.5	1	1	1	1	1	1
+E150031652_L01_B5GANIdazlRAAAA-8034_2	1	1	1	0.5	1	1	1	1	1	1
+E150031652_L01_B5GANIdazlRAABA-8035_1	1	1	1	0.5	1	1	1	1	1	1
+E150031652_L01_B5GANIdazlRAABA-8035_2	1	1	1	0.5	1	1	1	1	1	1
+E150031652_L01_B5GANIdazlRAACA-8036_1	1	1	1	0.5	1	1	1	1	1	1
+E150031652_L01_B5GANIdazlRAACA-8036_2	1	1	1	0.5	1	1	1	1	1	1
+E150031652_L01_B5GANIdazlRAADA-8038_1	1	1	1	0.5	1	1	1	1	1	1
+E150031652_L01_B5GANIdazlRAADA-8038_2	1	1	1	0.5	1	1	1	1	1	1

@@ -1,0 +1,13 @@
+============================================
+Processing 8038
+Input: /scratch/project_2019524/pinksalmon_alignments/lowinput/coverage_depth/8038.depth.txt
+============================================
+Genome-wide output:
+/scratch/project_2019524/pinksalmon_alignments/lowinput/coverage_depth/depth_stats/8038.depth_stats.txt
+Chromosome-level output:
+/scratch/project_2019524/pinksalmon_alignments/lowinput/coverage_depth/depth_stats/8038.chromosome_depth_stats.txt
+
+============================================
+8038 finished
+Finished: Wed Sep  9 12:34:14 PM EEST 2026
+============================================

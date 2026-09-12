@@ -1,0 +1,77 @@
+================================================
+Processing sample: 8167
+Method: normalinput
+Depth file: /scratch/project_2019524/pinksalmon_alignments/normalinput/coverage_depth/8167.depth.txt
+Output: /scratch/project_2019524/pinksalmon_alignments/normalinput/coverage_depth/depth_stats/8167.depth_evenness.txt
+================================================
+  Finished chromosome 1: NC_060173.1
+  Finished chromosome 2: NC_060174.1
+  Finished chromosome 3: NC_060175.1
+  Finished chromosome 4: NC_060176.1
+  Finished chromosome 5: NC_060177.1
+  Finished chromosome 6: NC_060178.1
+  Finished chromosome 7: NC_060179.1
+  Finished chromosome 8: NC_060180.1
+  Finished chromosome 9: NC_060181.1
+  Finished chromosome 10: NC_060182.1
+  Finished chromosome 11: NC_060183.1
+  Finished chromosome 12: NC_060184.1
+  Finished chromosome 13: NC_060185.1
+  Finished chromosome 14: NC_060186.1
+  Finished chromosome 15: NC_060187.1
+  Finished chromosome 16: NC_060188.1
+  Finished chromosome 17: NC_060189.1
+  Finished chromosome 18: NC_060190.1
+  Finished chromosome 19: NC_060191.1
+  Finished chromosome 20: NC_060192.1
+  Finished chromosome 21: NC_060193.1
+  Finished chromosome 22: NC_060194.1
+  Finished chromosome 23: NC_060195.1
+  Finished chromosome 24: NC_060196.1
+  Finished chromosome 25: NC_060197.1
+  Finished chromosome 26: NC_060198.1
+  Finished chromosome 27: NC_060199.1
+
+Finished 8167
+Output: /scratch/project_2019524/pinksalmon_alignments/normalinput/coverage_depth/depth_stats/8167.depth_evenness.txt
+
+================================================
+Processing sample: 8168
+Method: normalinput
+Depth file: /scratch/project_2019524/pinksalmon_alignments/normalinput/coverage_depth/8168.depth.txt
+Output: /scratch/project_2019524/pinksalmon_alignments/normalinput/coverage_depth/depth_stats/8168.depth_evenness.txt
+================================================
+  Finished chromosome 1: NC_060173.1
+  Finished chromosome 2: NC_060174.1
+  Finished chromosome 3: NC_060175.1
+  Finished chromosome 4: NC_060176.1
+  Finished chromosome 5: NC_060177.1
+  Finished chromosome 6: NC_060178.1
+  Finished chromosome 7: NC_060179.1
+  Finished chromosome 8: NC_060180.1
+  Finished chromosome 9: NC_060181.1
+  Finished chromosome 10: NC_060182.1
+  Finished chromosome 11: NC_060183.1
+  Finished chromosome 12: NC_060184.1
+  Finished chromosome 13: NC_060185.1
+  Finished chromosome 14: NC_060186.1
+  Finished chromosome 15: NC_060187.1
+  Finished chromosome 16: NC_060188.1
+  Finished chromosome 17: NC_060189.1
+  Finished chromosome 18: NC_060190.1
+  Finished chromosome 19: NC_060191.1
+  Finished chromosome 20: NC_060192.1
+  Finished chromosome 21: NC_060193.1
+  Finished chromosome 22: NC_060194.1
+  Finished chromosome 23: NC_060195.1
+  Finished chromosome 24: NC_060196.1
+  Finished chromosome 25: NC_060197.1
+  Finished chromosome 26: NC_060198.1
+  Finished chromosome 27: NC_060199.1
+
+Finished 8168
+Output: /scratch/project_2019524/pinksalmon_alignments/normalinput/coverage_depth/depth_stats/8168.depth_evenness.txt
+
+================================================
+All samples finished.
+================================================

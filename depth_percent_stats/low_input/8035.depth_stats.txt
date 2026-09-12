@@ -1,0 +1,2 @@
+Sample	Total_bases	Mean_depth	Percent_5x	Percent_8x	Percent_10x	Percent_12x	Percent_15x
+8035	2681578041	7.9606	37.8560	28.8195	23.0857	18.0281	12.1357

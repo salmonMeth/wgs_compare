@@ -1,0 +1,20 @@
+==========================================
+Sample: 8167
+BAM: /scratch/project_2019524/pinksalmon_alignments/normalinput/8167_align/8167.sorted.bam
+Start: Fri Aug 21 03:26:30 PM EEST 2026
+==========================================
+Running samtools coverage...
+Running samtools depth...
+Finished 8167
+==========================================
+Sample: 8168
+BAM: /scratch/project_2019524/pinksalmon_alignments/normalinput/8168_align/8168.sorted.bam
+Start: Fri Aug 21 03:44:38 PM EEST 2026
+==========================================
+Running samtools coverage...
+Running samtools depth...
+Finished 8168
+==========================================
+All coverage analyses complete
+Finished: Fri Aug 21 04:02:52 PM EEST 2026
+==========================================

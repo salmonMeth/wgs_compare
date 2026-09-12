@@ -1,0 +1,4 @@
+[2026-09-09T19:49:08.522] error: Error on msg accept socket: Too many open files in system
+[2026-09-09T19:49:08.525] error: Error on msg accept socket: Too many open files in system
+[2026-09-09T19:49:08.527] error: Error on msg accept socket: Too many open files in system
+[2026-09-09T19:49:08.529] fatal: _msg_socket_accept: pthread_create error Resource temporarily unavailable

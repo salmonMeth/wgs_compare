@@ -1,0 +1,5 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	E250168591_L01_B5GANInphdRAACA-8167_1	/scratch/project_2019524/PinkSalmon_normalinput/qc/fastqc/E250168591_L01_B5GANInphdRAACA-8167_1_fastqc.zip
+FastQC	all_sections	E250168591_L01_B5GANInphdRAACA-8167_2	/scratch/project_2019524/PinkSalmon_normalinput/qc/fastqc/E250168591_L01_B5GANInphdRAACA-8167_2_fastqc.zip
+FastQC	all_sections	E250168591_L01_B5GANInphdRAADA-8168_1	/scratch/project_2019524/PinkSalmon_normalinput/qc/fastqc/E250168591_L01_B5GANInphdRAADA-8168_1_fastqc.zip
+FastQC	all_sections	E250168591_L01_B5GANInphdRAADA-8168_2	/scratch/project_2019524/PinkSalmon_normalinput/qc/fastqc/E250168591_L01_B5GANInphdRAADA-8168_2_fastqc.zip

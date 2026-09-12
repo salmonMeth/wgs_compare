@@ -1,0 +1,4 @@
+awk: cmd. line:112:                 variance_chr =
+awk: cmd. line:112:                               ^ unexpected newline or end of string
+awk: cmd. line:113:                     (sumsq[chromosome] / n[chromosome]) -
+awk: cmd. line:113:                                                          ^ unexpected newline or end of string

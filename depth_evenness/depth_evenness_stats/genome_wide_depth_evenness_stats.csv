@@ -1,0 +1,11 @@
+Sample,Method,Level,Mean_depth,SD_depth,CV_depth,Min_depth,Max_depth
+8034,lowinput,Genome-wide,13.3031,25.1993,1.89424,0,12016
+8034,lowinput_P100,Genome-wide,10.272,18.2932,1.78089,0,10092
+8035,lowinput,Genome-wide,7.96056,119.986,15.0725,0,196344
+8035,lowinput_P100,Genome-wide,7.52756,143.816,19.1053,0,364809
+8036,lowinput,Genome-wide,13.2943,24.1244,1.81465,0,10285
+8036,lowinput_P100,Genome-wide,13.2867,21.8566,1.645,0,13906
+8036,normalinput,Genome-wide,13.3106,26.2495,1.97207,0,11967
+8038,lowinput,Genome-wide,13.3342,24.6869,1.8514,0,12278
+8038,lowinput_P100,Genome-wide,13.3235,22.9078,1.71936,0,14451
+8038,normalinput,Genome-wide,13.3397,26.5019,1.98669,0,14601

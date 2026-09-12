@@ -1,0 +1,136 @@
+[2026-09-10T16:39:47.731] error: *** JOB 1233245 ON rc4130 CANCELLED AT 2026-09-10T16:39:47 DUE to SIGNAL Terminated ***
+Terminated
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr5.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr5.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr6.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr6.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr6.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr6.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr6.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr7.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr7.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr7.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr7.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr7.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr8.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr8.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr8.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr8.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr8.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr9.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr9.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr9.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr9.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr9.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr10.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr10.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr10.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr10.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr10.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr11.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr11.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr11.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr11.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr11.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr12.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr12.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr12.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr12.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr12.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr13.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr13.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr13.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr13.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr13.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr14.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr14.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr14.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr14.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr14.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr15.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr15.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr15.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr15.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr15.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr16.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr16.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr16.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr16.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr16.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr17.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr17.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr17.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr17.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr17.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr18.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr18.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr18.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr18.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr18.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr19.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr19.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr19.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr19.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr19.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr20.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr20.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr20.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr20.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr20.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr21.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr21.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr21.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr21.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr21.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr22.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr22.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr22.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr22.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr22.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr23.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr23.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr23.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr23.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr23.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr24.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr24.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr24.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr24.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr24.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr25.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr25.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr25.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr25.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr25.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr26.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr26.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr26.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr26.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr26.sorted' for reading: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 385: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr27.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 392: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr27.depth: No such file or directory
+/var/spool/slurmd/job1233245/slurm_script: line 399: [: : integer expression expected
+/var/spool/slurmd/job1233245/slurm_script: line 419: /scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr27.sorted: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr27.sorted' for reading: No such file or directory
+awk: fatal: cannot open file `/scratch/project_2019524/pinksalmon_depth_evenness_stats/tmp_1233245/8034.chr27.sorted' for reading: No such file or directory

@@ -1,0 +1,11 @@
+Sample,Method,Average_length,Insert_size_average,Insert_size_SD
+8034,lowinput_P100,100,140.6,40
+8035,lowinput_P100,100,105,42.1
+8036,lowinput_P100,100,587.8,1868.4
+8038,lowinput_P100,100,187.5,70.4
+8034,lowinput,150,185.6,41
+8035,lowinput,150,147.3,48.4
+8036,lowinput,150,184.8,42.1
+8038,lowinput,150,225.2,71.6
+8167,normalinput,150,209.5,48.5
+8168,normalinput,150,267,70.5
