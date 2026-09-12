@@ -1,13 +1,14 @@
 library(tidyverse)
-
+#change the sample IDs
 SAMPLES <- c("8034", "8035", "8036", "8038")
 
-path_input <- "/scratch/project_2019524/pinksalmon_depth_evenness_stats"
-path_output <- "/scratch/project_2019524/pinksalmon_depth_evenness_plots"
+#change to the path of the directory that contains the depth evenness/variability stats
+path_input <- "/scratch/project_2019524/depth_evenness_stats"
+path_output <- "/scratch/project_2019524/depth_evenness_plots"
 
 dir.create(path_output, recursive = TRUE, showWarnings = FALSE)
 
-# Map old sample IDs to the desired sample IDs
+# fix the 8167 <-> 8036 etc issue
 sample_map <- c(
   "8167" = "8036",
   "8168" = "8038"
@@ -15,10 +16,7 @@ sample_map <- c(
 
 for (SAMPLE in SAMPLES) {
   
-  # Find files belonging to either the desired sample ID
-  # or its old ID
   input_ids <- names(sample_map)[sample_map == SAMPLE]
-  
   search_ids <- c(SAMPLE, input_ids)
   
   files <- unlist(lapply(search_ids, function(id) {
@@ -40,7 +38,7 @@ for (SAMPLE in SAMPLES) {
     
     tmp <- read_tsv(file, show_col_types = FALSE)
     
-    # Rename old sample IDs to the desired IDs
+    # Rename the 816_ samples so that we can map them with other 8036 or 8038 samples
     tmp <- tmp %>%
       mutate(
         Sample = recode(
@@ -53,7 +51,6 @@ for (SAMPLE in SAMPLES) {
     tmp
   })
   
-  # Make sure the plotted sample is the desired ID
   dat <- dat %>%
     mutate(
       Sample = recode(

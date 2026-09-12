@@ -12,10 +12,10 @@
 
 set -euo pipefail
 
-# change this accordingly 
-
+# change this to the path of the directory containing the depth.txt file 
 DEPTHDIR="/scratch/project_2019524/pinksalmon_alignments/lowinput_P100/coverage_depth"
 
+#change the sample IDs accordingly
 SAMPLES=(
     8034
     8035
@@ -32,7 +32,6 @@ for SAMPLE in "${SAMPLES[@]}"
 do
 
     DEPTH="${DEPTHDIR}/${SAMPLE}.depth.txt"
-
     GENOME_OUT="${OUTDIR}/${SAMPLE}.depth_stats.txt"
     CHR_OUT="${OUTDIR}/${SAMPLE}.chromosome_depth_stats.txt"
 

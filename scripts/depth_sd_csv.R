@@ -1,12 +1,14 @@
 library(tidyverse)
 
-input_dir <- "/scratch/project_2019524/pinksalmon_depth_evenness_stats"
+#change to the path of the files created using depth_sd.slurm
+input_dir <- "/scratch/project_2019524/depth_evenness_stats"
 
 output_file <- file.path(
   input_dir,
   "genome_wide_depth_evenness_stats.csv"
 )
 
+#change the sample IDs accordingly
 desired_samples <- c(
   "8034",
   "8035",
@@ -14,7 +16,6 @@ desired_samples <- c(
   "8038"
 )
 
-# Read all existing depth-evenness files
 files <- list.files(
   input_dir,
   pattern = "_depth_evenness\\.txt$",
@@ -48,7 +49,7 @@ genome_wide <- map_dfr(
   }
 )
 
-# Rename old sample IDs
+# this fixes the sample ID issue with 8167 <-> 8036 and 8168 <->  8038
 genome_wide$Sample[
   genome_wide$Sample == "8167"
 ] <- "8036"
@@ -57,7 +58,6 @@ genome_wide$Sample[
   genome_wide$Sample == "8168"
 ] <- "8038"
 
-# Keep only desired samples
 genome_wide <- genome_wide %>%
   filter(
     Sample %in% desired_samples
@@ -77,12 +77,9 @@ genome_wide <- genome_wide %>%
     Method
   )
 
-# Write without changing the original values
 write_csv(
   genome_wide,
   output_file
 )
 
 message("Written: ", output_file)
-
-print(genome_wide)

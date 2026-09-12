@@ -1,12 +1,13 @@
 library(tidyverse)
 
+#change the path to the path of the MAPQ distribution csv file
 df <- read_csv("/scratch/project_2019524/pinksalmon_alignments/alignment_comparison/MAPQ_distribution.csv") %>%
   mutate(
     MAPQ = as.numeric(MAPQ),
     Count = as.numeric(Count),
     Sample = as.character(Sample),
     
-    # Samples that should be plotted together
+    # we want to plot 8167 alongside 8036 and 8168 with 8038
     PlotSample = case_when(
       Sample == "8167" ~ "8036",
       Sample == "8168" ~ "8038",
@@ -20,8 +21,6 @@ df %>%
     
     plot_id <- unique(dat$PlotSample)
     
-    # Combine counts from samples belonging to the same plot
-    # for each library method and MAPQ
     density_data <- dat %>%
       group_by(Method, MAPQ) %>%
       summarise(
@@ -29,14 +28,12 @@ df %>%
         .groups = "drop"
       ) %>%
       
-      # Calculate weighted KDE for each method
       group_by(Method) %>%
       group_modify(~ {
         
         x <- .x$MAPQ
         w <- .x$Count
         
-        # KDE bandwidth
         bw <- bw.nrd0(x)
         
         grid <- seq(0, 60, length.out = 512)
@@ -78,10 +75,8 @@ df %>%
         legend.position = "right"
       )
     
-    
     print(p)
     
-    # Save plot
     ggsave(
       filename = paste0("/scratch/project_2019524/pinksalmon_alignments/alignment_comparison/MAPQ_densities_", plot_id, ".png"),
       plot = p,

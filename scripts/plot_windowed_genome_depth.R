@@ -1,4 +1,4 @@
-#loops through all samples * libraries 
+#loops through all samples and libraries 
 # to produce genome wide depth plots
 
 library(ggplot2)
@@ -8,7 +8,6 @@ library(tidyr)
 library(patchwork)
 
 #change the paths and ids etc accordingly 
-
 INPUT_SAMPLES <- c(
   "8034",
   "8035",
@@ -34,13 +33,14 @@ METHODS <- c(
   "normalinput"
 )
 
-# Base directories
-ALIGNMENT_BASE <- "/scratch/project_2019524/pinksalmon_alignments"
-
-FAI_FILE <- "/scratch/project_2019524/pinksalmon_reference/GCF_021184085.1_OgorEven_v1.0_genomic.fna.fai"
+# base directory containing all the binned coverage data for all samples and methods
+#change accordingly
+base_dir <- "/scratch/project_2019524/pinksalmon_alignments"
+#reference genome path
+ref_path <- "/scratch/project_2019524/pinksalmon_reference/GCF_021184085.1_OgorEven_v1.0_genomic.fna.fai"
 
 # save the plots here
-OUTPUT_BASE <- "/scratch/project_2019524/pinksalmon_depth_plots"
+output_path <- "/scratch/project_2019524/pinksalmon_depth_plots"
 
 
 # get chr info from fai
@@ -52,7 +52,7 @@ chromosomes <- paste0(
 )
 
 fai <- read.delim(
-  FAI_FILE,
+  ref_path,
   header = FALSE,
   sep = "\t",
   stringsAsFactors = FALSE
@@ -146,7 +146,7 @@ make_depth_plot <- function(
   
   # get the windowed depth file, change path accordingly
   DEPTH_FILE <- paste0(
-    ALIGNMENT_BASE,
+    base_dir,
     "/",
     method,
     "/coverage_depth/depth_windows/",
@@ -420,7 +420,7 @@ for (input_sample in INPUT_SAMPLES) {
   
   
   sample_output_dir <- file.path(
-    OUTPUT_BASE,
+    output_path,
     sample_label
   )
   

@@ -1,7 +1,6 @@
 #gets the phred score plots, puts R1 and R2 plots together and saves them
 #as pdf and png
 
-
 library(magick)
 
 #change to the path of the file that stores all the fastqc data files
@@ -58,7 +57,6 @@ info$Sample <- sub(
     info$FileName
 )
 
-# Extract the sample ID to add to the plot
 info$SampleID <- sub(
     ".*-",
     "",
@@ -67,7 +65,6 @@ info$SampleID <- sub(
 
 print(info[, c("SampleID", "Read")])
 
-# Create phred_scores folder INSIDE work_dir
 output_dir <- file.path(
     work_dir,
     "phred_scores"
@@ -99,7 +96,6 @@ for (sample in samples) {
     r1 <- get_fastqc_plot(r1_path)
     r2 <- get_fastqc_plot(r2_path)
     
-    # Add labels to mark R1 and R2
     add_read_label <- function(img, label) {
         
         info_img <- image_info(img)

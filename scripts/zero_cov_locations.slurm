@@ -9,10 +9,11 @@
 #SBATCH --mem=8G
 #SBATCH --time=1-00:00:00
 
+#change accordingly
 METHOD="lowinput"
-
+#change to the path of the folder containing the depth.txt files
 DEPTHDIR="/scratch/project_2019524/pinksalmon_alignments/${METHOD}/coverage_depth"
-
+#change to the path of the reference genome
 FAI_FILE="/scratch/project_2019524/pinksalmon_reference/GCF_021184085.1_OgorEven_v1.0_genomic.fna.fai"
 
 OUTDIR="${DEPTHDIR}/depth_stats"
@@ -20,8 +21,7 @@ OUTDIR="${DEPTHDIR}/depth_stats"
 mkdir -p "$OUTDIR"
 
 #loop
-
-for SAMPLE in 8038
+for SAMPLE in 8034 8035 8036 8038
 do
 
     DEPTH_FILE="${DEPTHDIR}/${SAMPLE}.depth.txt"
@@ -51,10 +51,7 @@ do
         }
     }
 
-
-    # -----------------------------------------------------
-    # Read chromosome lengths from .fai
-    # -----------------------------------------------------
+    # get chr lengths
 
     FNR == NR {
 

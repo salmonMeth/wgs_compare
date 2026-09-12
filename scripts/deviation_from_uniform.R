@@ -2,8 +2,10 @@
 #deviates from uniform
 library(tidyverse)
 
+#change these accordingly
 SAMPLES <- c("8034", "8035", "8036", "8038")
 
+#change to the path of the folder that contains the stats regarding zero depth bases
 path_input <- "/scratch/project_2019524/pinksalmon_zero_depth_stats"
 path_output <- "/scratch/project_2019524/pinksalmon_zero_depth_end_plots"
 

@@ -1,8 +1,7 @@
 #runs FastQC and MultiQC on the fasta files and saves the resulting reports in new directories
 
 
-# in the `cd /scratch/project_2019524/PinkSalmon_lowinput` commands
-#change the paths to the paths of folders containing the fq.gz files
+# in the `cd /scratch/project_2019524/PinkSalmon_lowinput` type commands, change the paths to the paths of folders containing the fq.gz files
 
   
 module load bio-apps/v202603

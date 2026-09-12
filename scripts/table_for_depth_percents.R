@@ -1,12 +1,11 @@
 library(dplyr)
 library(readr)
 
-# ------------------------------------------------------------
-# Paths
-# ------------------------------------------------------------
-
+# path to the folder containing all the depth stats for all methods and samples
+#change accordingly
 base_dir <- "/scratch/project_2019524/pinksalmon_alignments"
 
+#paths to specific libraries, change accordingly
 method_dirs <- c(
   lowinput = file.path(
     base_dir,
@@ -23,18 +22,11 @@ method_dirs <- c(
 )
 
 # Output directory
-out_dir <- file.path(
-  base_dir,
-  "depth_percent_comparison"
-)
+out_dir <- file.path(base_dir,"depth_percent_comparison")
 
-# Samples to include
+# Sample IDs
 samples <- c("8034", "8035", "8036", "8038")
 
-
-# ------------------------------------------------------------
-# Read all depth statistics files from all methods
-# ------------------------------------------------------------
 
 all_depth_stats <- lapply(names(method_dirs), function(method) {
   
@@ -49,18 +41,16 @@ all_depth_stats <- lapply(names(method_dirs), function(method) {
   
   lapply(files, function(file) {
     
-    # Get sample ID from filename
     sample <- basename(file)
     sample <- sub("\\.depth_stats\\.txt$", "", sample)
     
-    # Rename old sample IDs
+    # fix the naming issue
     sample <- case_when(
       sample == "8167" ~ "8036",
       sample == "8168" ~ "8038",
       TRUE ~ sample
     )
     
-    # Read file
     read.delim(
       file,
       header = TRUE,
@@ -79,17 +69,10 @@ all_depth_stats <- lapply(names(method_dirs), function(method) {
   bind_rows()
 
 
-# ------------------------------------------------------------
-# Keep only desired samples
-# ------------------------------------------------------------
-
 all_depth_stats <- all_depth_stats %>%
   filter(Sample %in% samples)
 
 
-# ------------------------------------------------------------
-# Keep the required columns
-# ------------------------------------------------------------
 
 all_depth_stats <- all_depth_stats %>%
   select(
@@ -108,11 +91,9 @@ all_depth_stats <- all_depth_stats %>%
 
 for (sample in samples) {
   
-  # Select this sample
   sample_data <- all_depth_stats %>%
     filter(Sample == sample)
   
-  # Create sample directory
   sample_dir <- file.path(
     out_dir,
     sample
@@ -124,13 +105,11 @@ for (sample in samples) {
     showWarnings = FALSE
   )
   
-  # Output filename
   output_file <- file.path(
     sample_dir,
     paste0("depth_stats_", sample, ".csv")
   )
   
-  # Write CSV
   write_csv(
     sample_data,
     output_file

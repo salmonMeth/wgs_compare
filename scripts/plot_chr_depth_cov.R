@@ -1,7 +1,6 @@
 library(tidyverse)
 
-# dirs where the coverage stats are of the different libraries
-
+# paths to the directories that contain the coverage.txt files for different libraries
 method_dirs <- c(
   lowinput_P100 = "/scratch/project_2019524/pinksalmon_alignments/lowinput_P100/coverage_depth",
   lowinput       = "/scratch/project_2019524/pinksalmon_alignments/lowinput/coverage_depth",
@@ -28,7 +27,6 @@ read_method <- function(method, directory) {
       "^\\d+"
     )
 
-    
     dat <- read.delim(
       file,
       header = TRUE,
@@ -38,10 +36,8 @@ read_method <- function(method, directory) {
       stringsAsFactors = FALSE
     )
     
-    # Change "#rname" to "rname"
     names(dat)[1] <- "rname"
 
-    
     dat %>%
       mutate(
         Sample = sample,
@@ -57,7 +53,7 @@ coverage <- map2_dfr(
   read_method
 )
 
-
+#fix the 8167 <-> 8036, 8168 <-> 8038 sample ID issue
 coverage <- coverage %>%
   mutate(
     Sample = case_when(
@@ -66,7 +62,6 @@ coverage <- coverage %>%
       TRUE ~ Sample
     )
   )
-
 
 coverage <- coverage %>%
   mutate(
@@ -77,9 +72,6 @@ coverage <- coverage %>%
 
 
 coverage <- coverage %>% filter(!is.na(chr))
-
-
-
 plot_data <- coverage %>% group_by(Sample, Method, chr) %>% summarise( coverage = mean(coverage, na.rm = TRUE), .groups = "drop" )
 
 
@@ -97,7 +89,7 @@ plot_data %>%
     
     plot_id <- unique(dat$Sample)
     
-    # Dynamic y-axis
+    #Modify the axes
     min_coverage <- min(dat$coverage, na.rm = TRUE)
     max_coverage <- max(dat$coverage, na.rm = TRUE)
     
@@ -157,11 +149,9 @@ plot_data %>%
   })
 
 
-
 ###########################
 ###########################
 #create plots for the mean depth
-
 
 plot_data_depth <- coverage %>%
   group_by(Sample, Method, chr) %>%

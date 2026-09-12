@@ -1,15 +1,14 @@
 library(tidyverse)
 
-# Input/output
-input_dir <- "/scratch/project_2019524/pinksalmon_depth_evenness_binned_approx"
-output_dir <- "/scratch/project_2019524/pinksalmon_depth_evenness_plots"
+# change to the path of the folder that contains the depth stats obtained from the binned genome
+input_dir <- "/scratch/project_2019524/depth_evenness_binned_approx"
+output_dir <- "/scratch/project_2019524/depth_evenness_plots"
 
 
 dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
-
+#change the Ids accordingly
 samples <- c("8034", "8035", "8036", "8038")
 
-# Read weighted chromosome statistics
 files <- list.files(
   input_dir,
   pattern = "_depth_evenness_weighted_chr\\.txt$",
@@ -21,7 +20,6 @@ all_stats <- map_dfr(
   ~ read_tsv(.x, show_col_types = FALSE)
 )
 
-# Keep desired samples and methods
 plot_data <- all_stats %>%
   filter(
     Sample %in% samples,
@@ -35,7 +33,6 @@ plot_data <- all_stats %>%
     )
   )
 
-# Make one plot per sample
 for (sample_id in samples) {
   
   df <- plot_data %>%
@@ -50,7 +47,7 @@ for (sample_id in samples) {
     )
   ) +
     
-    # IQR bar: Q25 to Q75
+    # q25 q75 interval
     geom_linerange(
       aes(
         ymin = Q25_depth,
@@ -61,7 +58,7 @@ for (sample_id in samples) {
       alpha = 0.75
     ) +
     
-    # Median
+    # add a median mark
     geom_point(
       aes(
         y = Median_depth
@@ -71,7 +68,7 @@ for (sample_id in samples) {
       size = 2.5
     ) +
     
-    # Mean
+    # mean mark
     geom_point(
       aes(
         y = Mean_depth

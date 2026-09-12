@@ -4,7 +4,7 @@ library(stringr)
 library(ggplot2)
 library(readr)
 
-#change the directory accordingly 
+#change to the path of the folder containing flagstat.txt and stats.txt files
 work_dir <- "/scratch/project_2019524/pinksalmon_alignments"
 
 flagstat_files <- list.files(
@@ -26,7 +26,6 @@ stats_files <- list.files(
 cat("Found", length(flagstat_files), "flagstat files\n")
 cat("Found", length(stats_files), "stats files\n")
 
-# get sample and method name from the file path
 
 get_sample <- function(x) {
   sub(
@@ -41,7 +40,6 @@ get_method <- function(x) {
 }
 
 # parsing helpers
-
 parse_flagstat <- function(file) {
   
   x <- readLines(file, warn = FALSE)
@@ -378,10 +376,7 @@ write_csv(
   output_file
 )
 
-# ------------------------------------------------------------
-# Create MAPQ distribution data
-# ------------------------------------------------------------
-
+# MAPQ distributions
 mapq_data <- bind_rows(
   lapply(
     stats_files,

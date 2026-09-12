@@ -1,6 +1,7 @@
 library(tidyverse)
 
-# Paths
+# Path to the base directory that contains the binned depth files for all the methods and samples
+# instead one can also modify the depth_dir directly on line 96
 input_base <- "/scratch/project_2019524/pinksalmon_alignments"
 fai_file <- "/scratch/project_2019524/pinksalmon_reference/GCF_021184085.1_OgorEven_v1.0_genomic.fna.fai"
 
@@ -15,13 +16,13 @@ sample_map <- c(
   "8168" = "8038"
 )
 
-# The 27 actual chromosomes
+# just get the chromosomes
 chromosomes <- tibble(
   chromosome = paste0("NC_", sprintf("%06d", 60173:60199), ".1"),
   chr_number = 1:27
 )
 
-# Read chromosome lengths from FAI
+# get the chromosome lengths from fai
 fai <- read_tsv(
   fai_file,
   col_names = c("chromosome", "chr_length", "offset", "line_bases", "line_width"),
@@ -29,11 +30,9 @@ fai <- read_tsv(
 ) %>%
   select(chromosome, chr_length)
 
-# Keep only the 27 chromosomes
 chromosomes <- chromosomes %>%
   left_join(fai, by = "chromosome")
 
-# Check that all 27 chromosomes were found
 if (any(is.na(chromosomes$chr_length))) {
   missing_chr <- chromosomes$chromosome[is.na(chromosomes$chr_length)]
   stop(
@@ -42,11 +41,8 @@ if (any(is.na(chromosomes$chr_length))) {
   )
 }
 
-# Calculate weighted statistics for one chromosome
+# Calculate length weighted statistics for one chromosome
 weighted_stats <- function(df, chr_length) {
-  
-  # Correct bin weight:
-  # actual number of bases represented by each bin
   df <- df %>%
     mutate(
       weight = pmin(window_end, chr_length) - window_start + 1
@@ -55,10 +51,8 @@ weighted_stats <- function(df, chr_length) {
   
   total_weight <- sum(df$weight)
   
-  # Weighted mean
   mean_depth <- sum(df$mean_depth * df$weight) / total_weight
   
-  # Weighted population SD
   sd_depth <- sqrt(
     sum(df$weight * (df$mean_depth - mean_depth)^2) / total_weight
   )
@@ -70,7 +64,7 @@ weighted_stats <- function(df, chr_length) {
     sd_depth / mean_depth
   )
   
-  # Weighted empirical quantiles
+  # quantiles
   df_sorted <- df %>%
     arrange(mean_depth) %>%
     mutate(cum_weight = cumsum(weight))
@@ -113,16 +107,12 @@ for (method in methods) {
   for (file in files) {
     
     filename <- basename(file)
+        sample_id <- sub("\\.depth_100000bp\\.txt$", "", filename)
     
-    # Extract sample ID from filename
-    sample_id <- sub("\\.depth_100000bp\\.txt$", "", filename)
-    
-    # Rename old IDs
     if (sample_id %in% names(sample_map)) {
       sample_id <- sample_map[[sample_id]]
     }
     
-    # Only process desired samples
     if (!sample_id %in% c("8034", "8035", "8036", "8038")) {
       next
     }
@@ -131,11 +121,10 @@ for (method in methods) {
       
     depth <- read_tsv( file, col_names = TRUE, show_col_types = FALSE ) %>% mutate( window_start = as.numeric(window_start), window_end = as.numeric(window_end), mean_depth = as.numeric(mean_depth) )
     
-    # Keep only the 27 chromosomes and attach chromosome lengths
     depth_chr <- depth %>%
       inner_join(chromosomes, by = "chromosome")
     
-    # Calculate statistics chromosome by chromosome
+    # calculate stats
     results <- depth_chr %>%
       group_by(chr_number, chromosome, chr_length) %>%
       group_modify(~ weighted_stats(.x, .y$chr_length)) %>%
@@ -161,7 +150,6 @@ for (method in methods) {
       ) %>%
       arrange(chr_number)
     
-    # Output contains only the desired sample ID
     output_file <- file.path(
       output_dir,
       paste0(sample_id, "_", method, "_depth_evenness_weighted_chr.txt")

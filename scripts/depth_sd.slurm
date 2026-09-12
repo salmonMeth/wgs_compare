@@ -10,33 +10,21 @@
 #SBATCH --time=1-00:00:00
 
 # ============================================================
-# Calculate fast depth evenness statistics
-#
-# Statistics:
-#   Mean
-#   SD
-#   CV
-#   Min
-#   Max
-#
-# Calculated:
-#   - genome-wide
-#   - per chromosome
-#
-# No large AWK arrays
-# No sorting
-# One streaming pass through each depth file
-# ============================================================
+# Calculate depth evenness/variability stats
+#mean, sd, cv, min/max
 
+#change the method accordingly
 METHOD="lowinput"
 
+#change to the folder containing the depth.txt files
 ALIGNMENT_BASE="/scratch/project_2019524/pinksalmon_alignments"
 DEPTHDIR="${ALIGNMENT_BASE}/${METHOD}/coverage_depth"
 
-OUTDIR="/scratch/project_2019524/pinksalmon_depth_evenness_short"
+OUTDIR="/scratch/project_2019524/depth_evenness_short"
 mkdir -p "${OUTDIR}"
 
-SAMPLES=(8035 8036 8038)
+#change the sample IDS accordingly
+SAMPLES=(8034 8035 8036 8038)
 
 # Chromosome names
 CHR_NAMES=(
@@ -84,25 +72,10 @@ echo "Processing ${SAMPLE} ${METHOD}"
 echo "Input:  ${DEPTH_FILE}"
 echo "Output: ${OUTFILE}"
 
-# --------------------------------------------------------
-# Write header
-# --------------------------------------------------------
 
 echo -e \
 "Sample\tMethod\tLevel\tchr_number\tchromosome\tMean_depth\tSD_depth\tCV_depth\tMin_depth\tMax_depth" \
 > "${OUTFILE}"
-
-# --------------------------------------------------------
-# One streaming AWK pass
-#
-# Assumes depth.txt has:
-# chromosome position depth
-#
-# i.e.
-# NC_060173.1  1  12
-# NC_060173.1  2  14
-# ...
-# --------------------------------------------------------
 
 awk \
     -v sample="${SAMPLE}" \
@@ -151,7 +124,7 @@ BEGIN {
     if (depth == "" || depth !~ /^[0-9.]+$/)
         next
 
-    # Genome-wide
+    # genome-wide
     n_all++
     sum_all += depth
     sumsq_all += depth * depth
@@ -162,7 +135,7 @@ BEGIN {
     if (n_all == 1 || depth > max_all)
         max_all = depth
 
-    # Per chromosome
+    # per chr
     n[chromosome]++
     sum[chromosome] += depth
     sumsq[chromosome] += depth * depth
@@ -176,7 +149,7 @@ BEGIN {
 
 END {
 
-    # Genome-wide statistics
+    # stats
 
     mean_all = sum_all / n_all
     variance_all = (sumsq_all / n_all) - (mean_all * mean_all)
@@ -193,7 +166,7 @@ END {
 
     print sample, method, "Genome-wide", "NA", "Genome-wide", mean_all, sd_all, cv_all, min_all, max_all
 
-    # Per chromosome statistics
+    # per chr stats
 
     for (i = 1; i <= 27; i++) {
 

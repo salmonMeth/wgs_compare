@@ -13,8 +13,7 @@
 set -euo pipefail
 
 
-# change these accordingly
-
+# change these accordingly to the path olf the folder containing the depth.txt files
 BAMDIR="/scratch/project_2019524/pinksalmon_alignments/normalinput/coverage_depth"
 
 SAMPLES=(
@@ -29,16 +28,10 @@ OUTDIR="${BAMDIR}/depth_windows"
 
 mkdir -p "$OUTDIR"
 
-
-############################################
-# PROCESS EACH SAMPLE
-############################################
-
 for SAMPLE in "${SAMPLES[@]}"
 do
 
     DEPTH="${BAMDIR}/${SAMPLE}.depth.txt"
-
     OUT="${OUTDIR}/${SAMPLE}.depth_${WINDOW}bp.txt"
 
     echo "=========================================="
